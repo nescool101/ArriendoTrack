@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArriendoTrack - Automatiza tus Cuentas de Cobro de Arrendamiento</title>
+    <meta name="description" content="ArriendoTrack: Automatiza el cobro de arrendamientos. Genera cuentas de cobro, rastrea pagos y gestiona arrendatarios. Bilingual rental billing automation.">
+    <meta name="keywords" content="arriendo, arrendamiento, cuenta de cobro, rental billing, rent tracking, automatizacion cobros">
+    <meta property="og:title" content="ArriendoTrack - Rental Billing Automation">
+    <meta property="og:description" content="Automate your rental billing. Track leases, generate invoices, manage tenants.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+    <!-- Replace GTM-XXXXXXX with your actual GTM Container ID -->
+    <!-- End Google Tag Manager -->
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- Replace GTM-XXXXXXX with your actual GTM Container ID -->
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- ========== HEADER ========== -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="logo">
+                <span class="logo-icon">AT</span>
+                <span class="logo-text">ArriendoTrack</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#how-it-works" data-es="Cómo Funciona" data-en="How It Works">Cómo Funciona</a></li>
+                <li><a href="#template" data-es="Plantilla" data-en="Template">Plantilla</a></li>
+                <li><a href="#pricing" data-es="Planes" data-en="Pricing">Planes</a></li>
+                <li><a href="#features" data-es="Características" data-en="Features">Características</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+                    <span class="lang-option" data-lang="es">ES</span>
+                    <span class="lang-separator">|</span>
+                    <span class="lang-option" data-lang="en">EN</span>
+                </button>
+                <a href="#pricing" class="btn btn-primary btn-sm" data-es="Comenzar" data-en="Get Started">Comenzar</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge" data-es="Automatización de Arrendamientos" data-en="Rental Billing Automation">Automatización de Arrendamientos</div>
+                <h1>
+                    <span data-es="Automatiza tus" data-en="Automate your">Automatiza tus</span><br>
+                    <span class="text-gradient" data-es="Cuentas de Cobro" data-en="Rental Invoices">Cuentas de Cobro</span><br>
+                    <span data-es="de Arrendamiento" data-en="Effortlessly">de Arrendamiento</span>
+                </h1>
+                <p class="hero-subtitle" data-es="Genera cuentas de cobro automáticas, rastrea pagos y gestiona todos tus arrendatarios desde un solo lugar. Ahorra tiempo y nunca pierdas un cobro." data-en="Generate automatic billing statements, track payments, and manage all your tenants from one place. Save time and never miss a collection.">Genera cuentas de cobro automáticas, rastrea pagos y gestiona todos tus arrendatarios desde un solo lugar. Ahorra tiempo y nunca pierdas un cobro.</p>
+                <div class="hero-cta">
+                    <a href="#pricing" class="btn btn-primary btn-lg" data-es="Ver Planes desde $10.000 COP" data-en="See Plans from $3 USD">Ver Planes desde $10.000 COP</a>
+                    <a href="#template" class="btn btn-outline btn-lg" data-es="Ver Ejemplo" data-en="See Example">Ver Ejemplo</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label" data-es="Automatizado" data-en="Automated">Automatizado</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">2</span>
+                        <span class="stat-label" data-es="Idiomas" data-en="Languages">Idiomas</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label" data-es="Cobro Activo" data-en="Active Billing">Cobro Activo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- ========== HOW IT WORKS ========== -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-es="Proceso Simple" data-en="Simple Process">Proceso Simple</span>
+                <h2 data-es="¿Cómo Funciona?" data-en="How Does It Work?">¿Cómo Funciona?</h2>
+                <p data-es="En 3 simples pasos automatiza el cobro de tus arrendamientos" data-en="Automate your rental billing in 3 simple steps">En 3 simples pasos automatiza el cobro de tus arrendamientos</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h3 data-es="Registra tus Arrendatarios" data-en="Register Your Tenants">Registra tus Arrendatarios</h3>
+                    <p data-es="Agrega la información de tus arrendatarios, inmuebles y condiciones de cada contrato." data-en="Add your tenants' information, properties, and contract conditions.">Agrega la información de tus arrendatarios, inmuebles y condiciones de cada contrato.</p>
+                </div>
+                <div class="step-connector">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    </div>
+                    <h3 data-es="Configura la Automatización" data-en="Set Up Automation">Configura la Automatización</h3>
+                    <p data-es="Define fechas de cobro, datos bancarios y frecuencia de recordatorios automáticos por email." data-en="Set billing dates, bank details, and automatic email reminder frequency.">Define fechas de cobro, datos bancarios y frecuencia de recordatorios automáticos por email.</p>
+                </div>
+                <div class="step-connector">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    </div>
+                    <h3 data-es="Cobros Enviados Automáticamente" data-en="Automatic Billing Sent">Cobros Enviados Automáticamente</h3>
+                    <p data-es="Las cuentas de cobro se envían por email al arrendatario y al arrendador. Tú recibes copia de todo." data-en="Billing statements are sent via email to the tenant and landlord. You receive a copy of everything.">Las cuentas de cobro se envían por email al arrendatario y al arrendador. Tú recibes copia de todo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TEMPLATE PREVIEW ========== -->
+    <section class="template-section" id="template">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-es="Ejemplo Real" data-en="Real Example">Ejemplo Real</span>
+                <h2 data-es="Cuenta de Cobro Generada" data-en="Generated Billing Statement">Cuenta de Cobro Generada</h2>
+                <p data-es="Así se ve una cuenta de cobro automática enviada a tu arrendatario" data-en="This is what an automatic billing statement sent to your tenant looks like">Así se ve una cuenta de cobro automática enviada a tu arrendatario</p>
+            </div>
+            <div class="template-wrapper">
+                <div class="template-card">
+                    <div class="template-header-bar">
+                        <div class="template-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <span class="template-title" data-es="Cuenta de Cobro de Arrendamiento" data-en="Rental Billing Statement">Cuenta de Cobro de Arrendamiento</span>
+                    </div>
+                    <div class="template-body">
+                        <!-- Landlord Info -->
+                        <div class="template-section-block">
+                            <h4 data-es="Información del Arrendador" data-en="Landlord Information">Información del Arrendador</h4>
+                            <div class="template-info-grid">
+                                <div>
+                                    <span class="template-label" data-es="Nombre:" data-en="Name:">Nombre:</span>
+                                    <span>Mi Empresa S.A.</span>
+                                </div>
+                                <div>
+                                    <span class="template-label">NIT/ID:</span>
+                                    <span>123456789</span>
+                                </div>
+                                <div>
+                                    <span class="template-label" data-es="Dirección:" data-en="Address:">Dirección:</span>
+                                    <span>Calle 123, Ciudad</span>
+                                </div>
+                                <div>
+                                    <span class="template-label" data-es="Teléfono:" data-en="Phone:">Teléfono:</span>
+                                    <span>555-1234</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Tenant Info -->
+                        <div class="template-section-block">
+                            <h4 data-es="Información del Arrendatario" data-en="Tenant Information">Información del Arrendatario</h4>
+                            <div class="template-info-grid">
+                                <div>
+                                    <span class="template-label" data-es="Nombre:" data-en="Name:">Nombre:</span>
+                                    <span>TestNombre Test Mes</span>
+                                </div>
+                                <div>
+                                    <span class="template-label">NIT/ID:</span>
+                                    <span>800234567</span>
+                                </div>
+                                <div>
+                                    <span class="template-label" data-es="Dirección del Inmueble:" data-en="Property Address:">Dirección del Inmueble:</span>
+                                    <span>456 Oak St, Townsville</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Account Details -->
+                        <div class="template-section-block">
+                            <h4 data-es="Detalles de la Cuenta" data-en="Account Details">Detalles de la Cuenta</h4>
+                            <div class="template-info-grid">
+                                <div>
+                                    <span class="template-label" data-es="No. Cuenta de Cobro:" data-en="Invoice Number:">No. Cuenta de Cobro:</span>
+                                    <span>20230106</span>
+                                </div>
+                                <div>
+                                    <span class="template-label" data-es="Fecha de Emisión:" data-en="Issue Date:">Fecha de Emisión:</span>
+                                    <span>06/01/2023</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Billing Table -->
+                        <div class="template-section-block">
+                            <table class="template-table">
+                                <thead>
+                                    <tr>
+                                        <th data-es="Descripción" data-en="Description">Descripción</th>
+                                        <th data-es="Periodo" data-en="Period">Periodo</th>
+                                        <th data-es="Valor" data-en="Amount">Valor</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-es="Canon de Arrendamiento - House" data-en="Rent Payment - House">Canon de Arrendamiento - House</td>
+                                        <td>06/01/2024 - 06/01/2025</td>
+                                        <td class="text-right">$1,100,000</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="2" class="text-right"><strong>Subtotal:</strong></td>
+                                        <td class="text-right"><strong>$1,100,000</strong></td>
+                                    </tr>
+                                    <tr class="total-row">
+                                        <td colspan="2" class="text-right" data-es="Total a Pagar:" data-en="Total Due:"><strong>Total a Pagar:</strong></td>
+                                        <td class="text-right"><strong>$1,100,000</strong></td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        <!-- Payment Instructions -->
+                        <div class="template-section-block">
+                            <h4 data-es="Instrucciones de Pago" data-en="Payment Instructions">Instrucciones de Pago</h4>
+                            <div class="template-info-grid">
+                                <div>
+                                    <span class="template-label" data-es="Condiciones:" data-en="Terms:">Condiciones:</span>
+                                    <span data-es="Pago antes del 5 de cada mes" data-en="Payment due before the 5th of each month">Pago antes del 5 de cada mes</span>
+                                </div>
+                                <div>
+                                    <span class="template-label" data-es="Banco:" data-en="Bank:">Banco:</span>
+                                    <span>Chase Bank</span>
+                                </div>
+                                <div>
+                                    <span class="template-label" data-es="Tipo de Cuenta:" data-en="Account Type:">Tipo de Cuenta:</span>
+                                    <span>Savings</span>
+                                </div>
+                                <div>
+                                    <span class="template-label" data-es="No. de Cuenta:" data-en="Account Number:">No. de Cuenta:</span>
+                                    <span>987654321</span>
+                                </div>
+                                <div>
+                                    <span class="template-label" data-es="Titular:" data-en="Account Holder:">Titular:</span>
+                                    <span>Jane Smith</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Notes -->
+                        <div class="template-section-block template-notes">
+                            <h4 data-es="Observaciones" data-en="Notes">Observaciones</h4>
+                            <p data-es="Recuerda que el siguiente año se renueva el arriendo con el monto previo más el IPC." data-en="Remember that next year the lease renews with the previous amount plus CPI adjustment.">Recuerda que el siguiente año se renueva el arriendo con el monto previo más el IPC.</p>
+                            <p class="template-disclaimer" data-es="Este es un recordatorio de pago automático. Si ya has realizado el pago, por favor ignora este mensaje." data-en="This is an automatic payment reminder. If you have already made the payment, please disregard this message.">Este es un recordatorio de pago automático. Si ya has realizado el pago, por favor ignora este mensaje.</p>
+                        </div>
+                        <!-- Signature -->
+                        <div class="template-signature">
+                            <p data-es="Atentamente," data-en="Sincerely,">Atentamente,</p>
+                            <p><strong>Carlos Owner Test</strong></p>
+                            <p>nescool101@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="template-badge" data-es="Generado automáticamente por ArriendoTrack" data-en="Automatically generated by ArriendoTrack">Generado automáticamente por ArriendoTrack</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FEATURES ========== -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-es="Características" data-en="Features">Características</span>
+                <h2 data-es="Todo lo que Necesitas" data-en="Everything You Need">Todo lo que Necesitas</h2>
+                <p data-es="Herramientas poderosas para gestionar todos tus arrendamientos" data-en="Powerful tools to manage all your rentals">Herramientas poderosas para gestionar todos tus arrendamientos</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                    </div>
+                    <h3 data-es="Cuentas de Cobro Automáticas" data-en="Automatic Billing Statements">Cuentas de Cobro Automáticas</h3>
+                    <p data-es="Genera y envía cuentas de cobro automáticamente cada mes a todos tus arrendatarios." data-en="Generate and send billing statements automatically every month to all your tenants.">Genera y envía cuentas de cobro automáticamente cada mes a todos tus arrendatarios.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3 data-es="Trazabilidad Completa" data-en="Full Traceability">Trazabilidad Completa</h3>
+                    <p data-es="Historial completo de cobros, pagos y comunicaciones con cada arrendatario." data-en="Complete history of billings, payments, and communications with each tenant.">Historial completo de cobros, pagos y comunicaciones con cada arrendatario.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </div>
+                    <h3 data-es="Notificación por Email" data-en="Email Notifications">Notificación por Email</h3>
+                    <p data-es="Envía la cuenta de cobro por correo al arrendatario y una copia al arrendador. El pago se realiza directamente entre las partes." data-en="Send the billing statement via email to the tenant and a copy to the landlord. Payment is made directly between the parties.">Envía la cuenta de cobro por correo al arrendatario y una copia al arrendador. El pago se realiza directamente entre las partes.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    </div>
+                    <h3 data-es="Recordatorios Automáticos" data-en="Automatic Reminders">Recordatorios Automáticos</h3>
+                    <p data-es="Envía recordatorios de pago por email antes y después de la fecha de vencimiento." data-en="Send payment reminders via email before and after the due date.">Envía recordatorios de pago por email antes y después de la fecha de vencimiento.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    </div>
+                    <h3 data-es="Bilingüe ES/EN" data-en="Bilingual ES/EN">Bilingüe ES/EN</h3>
+                    <p data-es="Cuentas de cobro en español e inglés. Perfecto para arrendatarios internacionales." data-en="Billing statements in Spanish and English. Perfect for international tenants.">Cuentas de cobro en español e inglés. Perfecto para arrendatarios internacionales.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                    </div>
+                    <h3 data-es="Ajuste IPC Automático" data-en="Automatic CPI Adjustment">Ajuste IPC Automático</h3>
+                    <p data-es="Calcula automáticamente el incremento anual del canon según el IPC vigente." data-en="Automatically calculate the annual rent increase based on the current CPI.">Calcula automáticamente el incremento anual del canon según el IPC vigente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PRICING ========== -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-es="Planes" data-en="Pricing">Planes</span>
+                <h2 data-es="Planes Simples y Accesibles" data-en="Simple & Affordable Plans">Planes Simples y Accesibles</h2>
+                <p data-es="Precio por arrendatario. Paga solo por lo que necesitas." data-en="Price per tenant. Pay only for what you need.">Precio por arrendatario. Paga solo por lo que necesitas.</p>
+            </div>
+            <div class="pricing-grid">
+                <!-- Semestral Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 data-es="Plan Semestral" data-en="6-Month Plan">Plan Semestral</h3>
+                        <p class="pricing-subtitle" data-es="6 meses de servicio" data-en="6 months of service">6 meses de servicio</p>
+                    </div>
+                    <div class="pricing-price">
+                        <div class="price-cop">
+                            <span class="currency">COP</span>
+                            <span class="amount">$10,000</span>
+                        </div>
+                        <div class="price-usd">
+                            <span data-es="o" data-en="or">o</span> <strong>$3 USD</strong>
+                        </div>
+                        <span class="price-period" data-es="/ por arrendatario / 6 meses" data-en="/ per tenant / 6 months">/ por arrendatario / 6 meses</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span data-es="Cuentas de cobro automáticas" data-en="Automatic billing statements">Cuentas de cobro automáticas</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span data-es="Recordatorios por email" data-en="Email reminders">Recordatorios por email</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span data-es="Historial de pagos" data-en="Payment history">Historial de pagos</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span data-es="Soporte bilingüe ES/EN" data-en="Bilingual support ES/EN">Soporte bilingüe ES/EN</span>
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/573124894828?text=Hola%2C%20me%20interesa%20el%20Plan%20Semestral%20de%20ArriendoTrack" class="btn btn-outline btn-block" data-es="Elegir Semestral" data-en="Choose 6-Month">Elegir Semestral</a>
+                </div>
+                <!-- Anual Plan -->
+                <div class="pricing-card pricing-card-featured">
+                    <div class="pricing-popular" data-es="Más Popular" data-en="Most Popular">Más Popular</div>
+                    <div class="pricing-header">
+                        <h3 data-es="Plan Anual" data-en="Annual Plan">Plan Anual</h3>
+                        <p class="pricing-subtitle" data-es="12 meses de servicio" data-en="12 months of service">12 meses de servicio</p>
+                    </div>
+                    <div class="pricing-price">
+                        <div class="price-cop">
+                            <span class="currency">COP</span>
+                            <span class="amount">$20,000</span>
+                        </div>
+                        <div class="price-usd">
+                            <span data-es="o" data-en="or">o</span> <strong>$6 USD</strong>
+                        </div>
+                        <span class="price-period" data-es="/ por arrendatario / año" data-en="/ per tenant / year">/ por arrendatario / año</span>
+                    </div>
+                    <div class="pricing-savings">
+                        <span data-es="Ahorras 17% vs semestral" data-en="Save 17% vs 6-month">Ahorras 17% vs semestral</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span data-es="Todo del plan semestral" data-en="Everything in 6-month plan">Todo del plan semestral</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span data-es="Ajuste IPC automático" data-en="Automatic CPI adjustment">Ajuste IPC automático</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span data-es="Reportes anuales" data-en="Annual reports">Reportes anuales</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span data-es="Soporte prioritario" data-en="Priority support">Soporte prioritario</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span data-es="Notificaciones WhatsApp" data-en="WhatsApp notifications">Notificaciones WhatsApp</span>
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/573124894828?text=Hola%2C%20me%20interesa%20el%20Plan%20Anual%20de%20ArriendoTrack" class="btn btn-primary btn-block" data-es="Elegir Anual" data-en="Choose Annual">Elegir Anual</a>
+                </div>
+            </div>
+            <!-- Volume Discount -->
+            <div class="pricing-volume">
+                <div class="volume-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <div>
+                    <h4 data-es="¿Tienes muchos arrendatarios?" data-en="Have many tenants?">¿Tienes muchos arrendatarios?</h4>
+                    <p data-es="Contáctanos para descuentos por volumen. A mayor cantidad de arrendatarios, mejor precio por unidad." data-en="Contact us for volume discounts. The more tenants, the better the unit price.">Contáctanos para descuentos por volumen. A mayor cantidad de arrendatarios, mejor precio por unidad.</p>
+                </div>
+                <a href="https://wa.me/573124894828?text=Hola%2C%20me%20interesa%20un%20descuento%20por%20volumen%20en%20ArriendoTrack" class="btn btn-outline btn-sm" data-es="Contactar" data-en="Contact Us">Contactar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA ========== -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-es="Empieza a Automatizar tus Cobros Hoy" data-en="Start Automating Your Billing Today">Empieza a Automatizar tus Cobros Hoy</h2>
+                <p data-es="Únete a los arrendadores que ya gestionan sus cobros de forma inteligente con ArriendoTrack." data-en="Join landlords who already manage their billing intelligently with ArriendoTrack.">Únete a los arrendadores que ya gestionan sus cobros de forma inteligente con ArriendoTrack.</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/573124894828?text=Hola%2C%20quiero%20empezar%20con%20ArriendoTrack" class="btn btn-white btn-lg" data-es="Comenzar Ahora" data-en="Get Started Now">Comenzar Ahora</a>
+                    <a href="#template" class="btn btn-outline-white btn-lg" data-es="Ver Ejemplo" data-en="See Example">Ver Ejemplo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">AT</span>
+                        <span class="logo-text">ArriendoTrack</span>
+                    </a>
+                    <p data-es="Automatización de cuentas de cobro de arrendamiento. Simple, rápido y bilingüe." data-en="Rental billing statement automation. Simple, fast, and bilingual.">Automatización de cuentas de cobro de arrendamiento. Simple, rápido y bilingüe.</p>
+                </div>
+                <div class="footer-links">
+                    <h4 data-es="Producto" data-en="Product">Producto</h4>
+                    <ul>
+                        <li><a href="#features" data-es="Características" data-en="Features">Características</a></li>
+                        <li><a href="#pricing" data-es="Planes" data-en="Pricing">Planes</a></li>
+                        <li><a href="#template" data-es="Plantilla" data-en="Template">Plantilla</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4 data-es="Recursos" data-en="Resources">Recursos</h4>
+                    <ul>
+                        <li><a href="#how-it-works" data-es="Cómo Funciona" data-en="How It Works">Cómo Funciona</a></li>
+                        <li><a href="mailto:nescool101@gmail.com" data-es="Contacto" data-en="Contact">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4 data-es="Contacto" data-en="Contact">Contacto</h4>
+                    <ul>
+                        <li><a href="mailto:nescool101@gmail.com">nescool101@gmail.com</a></li>
+                        <li><a href="https://wa.me/573124894828" target="_blank" rel="noopener">WhatsApp: +57 312 489 4828</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ArriendoTrack. <span data-es="Todos los derechos reservados." data-en="All rights reserved.">Todos los derechos reservados.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/573124894828?text=Hola%2C%20me%20interesa%20ArriendoTrack" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contact via WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
