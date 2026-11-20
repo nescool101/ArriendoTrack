@@ -126,4 +126,28 @@
         observer.observe(el);
     });
 
+    // ========== Contact form ==========
+    var form = document.getElementById('contactForm');
+    var status = document.getElementById('formStatus');
+    var T = {
+        ok: { es: 'Mensaje enviado. Te respondemos pronto.', en: 'Message sent. We will reply soon.' },
+        bad: { es: 'Revisa nombre, correo y mensaje.', en: 'Check name, email and message.' },
+        fail: { es: 'No se pudo enviar. Escríbenos por WhatsApp.', en: 'Could not send. Message us on WhatsApp.' }
+    };
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var btn = form.querySelector('button');
+        btn.disabled = true;
+        fetch('/api/contact', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(Object.fromEntries(new FormData(form)))
+        }).then(function (r) {
+            status.textContent = T[r.ok ? 'ok' : r.status === 400 ? 'bad' : 'fail'][currentLang];
+            if (r.ok) form.reset();
+        }).catch(function () {
+            status.textContent = T.fail[currentLang];
+        }).finally(function () { btn.disabled = false; });
+    });
+
 })();

@@ -9,7 +9,7 @@ Bilingual (ES/EN) landing page for ArriendoTrack — an automated rental billing
 - Responsive design (mobile, tablet, desktop)
 - Google Tag Manager integration (replace `GTM-XXXXXXX` with your container ID)
 - WhatsApp floating contact button
-- Pricing plans: Semestral ($10,000 COP / $3 USD) and Annual ($20,000 COP / $6 USD)
+- Single plan: $5,000 COP / $1.50 USD per unit (any rental unit)
 
 ## Project Structure
 

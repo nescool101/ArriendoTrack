@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nescool101.github.io/ArriendoTrack/sitemap.xml
