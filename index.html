@@ -9,9 +9,13 @@
     <meta property="og:title" content="ArriendoTrack - Rental Billing Automation">
     <meta property="og:description" content="Automate your rental billing. Track leases, generate invoices, manage tenants.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nescool101.github.io/ArriendoTrack/">
+    <link rel="canonical" href="https://nescool101.github.io/ArriendoTrack/">
+    <meta name="robots" content="index, follow">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"ArriendoTrack","description":"Cuentas de cobro automaticas para cualquier unidad en arriendo: apartamento, casa, local, habitacion.","url":"https://nescool101.github.io/ArriendoTrack/","offers":{"@type":"Offer","price":"5000","priceCurrency":"COP","availability":"https://schema.org/InStock"}}</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <link rel="stylesheet" href="css/styles.css">
 
@@ -43,6 +47,7 @@
                 <li><a href="#template" data-es="Plantilla" data-en="Template">Plantilla</a></li>
                 <li><a href="#pricing" data-es="Planes" data-en="Pricing">Planes</a></li>
                 <li><a href="#features" data-es="Características" data-en="Features">Características</a></li>
+                <li><a href="#contact" data-es="Contacto" data-en="Contact">Contacto</a></li>
             </ul>
             <div class="nav-actions">
                 <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
@@ -60,41 +65,25 @@
 
     <!-- ========== HERO ========== -->
     <section class="hero">
-        <div class="container">
+        <div class="container hero-grid">
             <div class="hero-content">
-                <div class="hero-badge" data-es="Automatización de Arrendamientos" data-en="Rental Billing Automation">Automatización de Arrendamientos</div>
-                <h1>
-                    <span data-es="Automatiza tus" data-en="Automate your">Automatiza tus</span><br>
-                    <span class="text-gradient" data-es="Cuentas de Cobro" data-en="Rental Invoices">Cuentas de Cobro</span><br>
-                    <span data-es="de Arrendamiento" data-en="Effortlessly">de Arrendamiento</span>
-                </h1>
-                <p class="hero-subtitle" data-es="Genera cuentas de cobro automáticas, rastrea pagos y gestiona todos tus arrendatarios desde un solo lugar. Ahorra tiempo y nunca pierdas un cobro." data-en="Generate automatic billing statements, track payments, and manage all your tenants from one place. Save time and never miss a collection.">Genera cuentas de cobro automáticas, rastrea pagos y gestiona todos tus arrendatarios desde un solo lugar. Ahorra tiempo y nunca pierdas un cobro.</p>
+                <h1 data-es="Tu cuenta de cobro sale sola cada mes." data-en="Your rent invoice goes out by itself every month.">Tu cuenta de cobro sale sola cada mes.</h1>
+                <p class="hero-subtitle" data-es="Para cualquier unidad en arriendo: apartamento, casa, local o habitación. Cada mes llega por email al arrendatario, con copia para ti." data-en="For any rental unit: apartment, house, shop or room. Every month it reaches the tenant by email, with a copy for you.">Para cualquier unidad en arriendo: apartamento, casa, local o habitación. Cada mes llega por email al arrendatario, con copia para ti.</p>
                 <div class="hero-cta">
-                    <a href="#pricing" class="btn btn-primary btn-lg" data-es="Ver Planes desde $10.000 COP" data-en="See Plans from $3 USD">Ver Planes desde $10.000 COP</a>
-                    <a href="#template" class="btn btn-outline btn-lg" data-es="Ver Ejemplo" data-en="See Example">Ver Ejemplo</a>
-                </div>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <span class="stat-number">100%</span>
-                        <span class="stat-label" data-es="Automatizado" data-en="Automated">Automatizado</span>
-                    </div>
-                    <div class="stat-divider"></div>
-                    <div class="stat">
-                        <span class="stat-number">2</span>
-                        <span class="stat-label" data-es="Idiomas" data-en="Languages">Idiomas</span>
-                    </div>
-                    <div class="stat-divider"></div>
-                    <div class="stat">
-                        <span class="stat-number">24/7</span>
-                        <span class="stat-label" data-es="Cobro Activo" data-en="Active Billing">Cobro Activo</span>
-                    </div>
+                    <a href="#pricing" class="btn btn-primary btn-lg" data-es="Empezar por $5.000 COP" data-en="Start for $1.50 USD">Empezar por $5.000 COP</a>
+                    <a href="#template" class="btn btn-outline btn-lg" data-es="Ver una cuenta de cobro" data-en="See a sample invoice">Ver una cuenta de cobro</a>
                 </div>
             </div>
-        </div>
-        <div class="hero-bg-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
+            <div class="hero-slip" aria-hidden="true">
+                <div class="slip-head"><span data-es="Cuenta de cobro" data-en="Billing statement">Cuenta de cobro</span><span>N.º 0042</span></div>
+                <dl class="slip-rows">
+                    <div><dt data-es="Inmueble" data-en="Unit">Inmueble</dt><dd>Apto 301</dd></div>
+                    <div><dt data-es="Concepto" data-en="Concept">Concepto</dt><dd data-es="Canon de octubre" data-en="October rent">Canon de octubre</dd></div>
+                    <div><dt data-es="Vence" data-en="Due">Vence</dt><dd data-es="5 de octubre" data-en="October 5">5 de octubre</dd></div>
+                </dl>
+                <div class="slip-total"><span data-es="Total" data-en="Total">Total</span><strong>$1.100.000</strong></div>
+                <div class="slip-stamp" data-es="Pagado" data-en="Paid">Pagado</div>
+            </div>
         </div>
     </section>
 
@@ -346,25 +335,25 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-tag" data-es="Planes" data-en="Pricing">Planes</span>
-                <h2 data-es="Planes Simples y Accesibles" data-en="Simple & Affordable Plans">Planes Simples y Accesibles</h2>
-                <p data-es="Precio por arrendatario. Paga solo por lo que necesitas." data-en="Price per tenant. Pay only for what you need.">Precio por arrendatario. Paga solo por lo que necesitas.</p>
+                <h2 data-es="Un Solo Plan para Cualquier Unidad" data-en="One Plan for Any Rental Unit">Un Solo Plan para Cualquier Unidad</h2>
+                <p data-es="Apartamento, casa, local, habitación o bodega: mismo precio por unidad." data-en="Apartment, house, shop, room or storage: same price per unit.">Apartamento, casa, local, habitación o bodega: mismo precio por unidad.</p>
             </div>
             <div class="pricing-grid">
-                <!-- Semestral Plan -->
-                <div class="pricing-card">
+                <!-- Single Plan -->
+                <div class="pricing-card pricing-card-featured">
                     <div class="pricing-header">
-                        <h3 data-es="Plan Semestral" data-en="6-Month Plan">Plan Semestral</h3>
+                        <h3 data-es="Plan Único" data-en="Single Plan">Plan Único</h3>
                         <p class="pricing-subtitle" data-es="6 meses de servicio" data-en="6 months of service">6 meses de servicio</p>
                     </div>
                     <div class="pricing-price">
                         <div class="price-cop">
                             <span class="currency">COP</span>
-                            <span class="amount">$10,000</span>
+                            <span class="amount">$5,000</span>
                         </div>
                         <div class="price-usd">
-                            <span data-es="o" data-en="or">o</span> <strong>$3 USD</strong>
+                            <span data-es="o" data-en="or">o</span> <strong>$1.50 USD</strong>
                         </div>
-                        <span class="price-period" data-es="/ por arrendatario / 6 meses" data-en="/ per tenant / 6 months">/ por arrendatario / 6 meses</span>
+                        <span class="price-period" data-es="/ por unidad / 6 meses" data-en="/ per unit / 6 months">/ por unidad / 6 meses</span>
                     </div>
                     <ul class="pricing-features">
                         <li>
@@ -384,51 +373,7 @@
                             <span data-es="Soporte bilingüe ES/EN" data-en="Bilingual support ES/EN">Soporte bilingüe ES/EN</span>
                         </li>
                     </ul>
-                    <a href="https://wa.me/573124894828?text=Hola%2C%20me%20interesa%20el%20Plan%20Semestral%20de%20ArriendoTrack" class="btn btn-outline btn-block" data-es="Elegir Semestral" data-en="Choose 6-Month">Elegir Semestral</a>
-                </div>
-                <!-- Anual Plan -->
-                <div class="pricing-card pricing-card-featured">
-                    <div class="pricing-popular" data-es="Más Popular" data-en="Most Popular">Más Popular</div>
-                    <div class="pricing-header">
-                        <h3 data-es="Plan Anual" data-en="Annual Plan">Plan Anual</h3>
-                        <p class="pricing-subtitle" data-es="12 meses de servicio" data-en="12 months of service">12 meses de servicio</p>
-                    </div>
-                    <div class="pricing-price">
-                        <div class="price-cop">
-                            <span class="currency">COP</span>
-                            <span class="amount">$20,000</span>
-                        </div>
-                        <div class="price-usd">
-                            <span data-es="o" data-en="or">o</span> <strong>$6 USD</strong>
-                        </div>
-                        <span class="price-period" data-es="/ por arrendatario / año" data-en="/ per tenant / year">/ por arrendatario / año</span>
-                    </div>
-                    <div class="pricing-savings">
-                        <span data-es="Ahorras 17% vs semestral" data-en="Save 17% vs 6-month">Ahorras 17% vs semestral</span>
-                    </div>
-                    <ul class="pricing-features">
-                        <li>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            <span data-es="Todo del plan semestral" data-en="Everything in 6-month plan">Todo del plan semestral</span>
-                        </li>
-                        <li>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            <span data-es="Ajuste IPC automático" data-en="Automatic CPI adjustment">Ajuste IPC automático</span>
-                        </li>
-                        <li>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            <span data-es="Reportes anuales" data-en="Annual reports">Reportes anuales</span>
-                        </li>
-                        <li>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            <span data-es="Soporte prioritario" data-en="Priority support">Soporte prioritario</span>
-                        </li>
-                        <li>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            <span data-es="Notificaciones WhatsApp" data-en="WhatsApp notifications">Notificaciones WhatsApp</span>
-                        </li>
-                    </ul>
-                    <a href="https://wa.me/573124894828?text=Hola%2C%20me%20interesa%20el%20Plan%20Anual%20de%20ArriendoTrack" class="btn btn-primary btn-block" data-es="Elegir Anual" data-en="Choose Annual">Elegir Anual</a>
+                    <a href="https://wa.me/nescool101?text=Hola%2C%20me%20interesa%20el%20Plan%20%C3%9Anico%20de%20ArriendoTrack" class="btn btn-outline btn-block" data-es="Elegir Plan" data-en="Choose Plan">Elegir Plan</a>
                 </div>
             </div>
             <!-- Volume Discount -->
@@ -440,22 +385,30 @@
                     <h4 data-es="¿Tienes muchos arrendatarios?" data-en="Have many tenants?">¿Tienes muchos arrendatarios?</h4>
                     <p data-es="Contáctanos para descuentos por volumen. A mayor cantidad de arrendatarios, mejor precio por unidad." data-en="Contact us for volume discounts. The more tenants, the better the unit price.">Contáctanos para descuentos por volumen. A mayor cantidad de arrendatarios, mejor precio por unidad.</p>
                 </div>
-                <a href="https://wa.me/573124894828?text=Hola%2C%20me%20interesa%20un%20descuento%20por%20volumen%20en%20ArriendoTrack" class="btn btn-outline btn-sm" data-es="Contactar" data-en="Contact Us">Contactar</a>
+                <a href="https://wa.me/nescool101?text=Hola%2C%20me%20interesa%20un%20descuento%20por%20volumen%20en%20ArriendoTrack" class="btn btn-outline btn-sm" data-es="Contactar" data-en="Contact Us">Contactar</a>
             </div>
         </div>
     </section>
 
-    <!-- ========== CTA ========== -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2 data-es="Empieza a Automatizar tus Cobros Hoy" data-en="Start Automating Your Billing Today">Empieza a Automatizar tus Cobros Hoy</h2>
-                <p data-es="Únete a los arrendadores que ya gestionan sus cobros de forma inteligente con ArriendoTrack." data-en="Join landlords who already manage their billing intelligently with ArriendoTrack.">Únete a los arrendadores que ya gestionan sus cobros de forma inteligente con ArriendoTrack.</p>
-                <div class="cta-buttons">
-                    <a href="https://wa.me/573124894828?text=Hola%2C%20quiero%20empezar%20con%20ArriendoTrack" class="btn btn-white btn-lg" data-es="Comenzar Ahora" data-en="Get Started Now">Comenzar Ahora</a>
-                    <a href="#template" class="btn btn-outline-white btn-lg" data-es="Ver Ejemplo" data-en="See Example">Ver Ejemplo</a>
-                </div>
+    <!-- ========== CONTACT ========== -->
+    <section class="cta-section contact" id="contact">
+        <div class="container contact-grid">
+            <div class="contact-intro">
+                <h2 data-es="Escríbenos. Respondemos hoy." data-en="Write to us. We reply today.">Escríbenos. Respondemos hoy.</h2>
+                <p data-es="Cuéntanos cuántas unidades tienes y te dejamos todo listo." data-en="Tell us how many units you have and we set everything up.">Cuéntanos cuántas unidades tienes y te dejamos todo listo.</p>
+                <ul class="contact-channels">
+                    <li><a class="btn btn-primary" href="https://wa.me/nescool101?text=Hola%2C%20quiero%20empezar%20con%20ArriendoTrack" target="_blank" rel="noopener">WhatsApp @nescool101</a></li>
+                    <li><a class="btn btn-outline" href="https://t.me/nescool101" target="_blank" rel="noopener">Telegram @nescool101</a></li>
+                </ul>
             </div>
+            <form class="contact-form" id="contactForm" novalidate>
+                <label><span data-es="Nombre" data-en="Name">Nombre</span><input name="name" required maxlength="100" autocomplete="name"></label>
+                <label><span data-es="Correo" data-en="Email">Correo</span><input name="email" type="email" required autocomplete="email"></label>
+                <label><span data-es="Mensaje" data-en="Message">Mensaje</span><textarea name="message" required minlength="5" maxlength="2000" rows="4"></textarea></label>
+                <input name="website" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
+                <button class="btn btn-primary btn-lg" type="submit" data-es="Enviar mensaje" data-en="Send message">Enviar mensaje</button>
+                <p class="form-status" id="formStatus" role="status"></p>
+            </form>
         </div>
     </section>
 
@@ -474,6 +427,7 @@
                     <h4 data-es="Producto" data-en="Product">Producto</h4>
                     <ul>
                         <li><a href="#features" data-es="Características" data-en="Features">Características</a></li>
+                <li><a href="#contact" data-es="Contacto" data-en="Contact">Contacto</a></li>
                         <li><a href="#pricing" data-es="Planes" data-en="Pricing">Planes</a></li>
                         <li><a href="#template" data-es="Plantilla" data-en="Template">Plantilla</a></li>
                     </ul>
@@ -489,7 +443,7 @@
                     <h4 data-es="Contacto" data-en="Contact">Contacto</h4>
                     <ul>
                         <li><a href="mailto:nescool101@gmail.com">nescool101@gmail.com</a></li>
-                        <li><a href="https://wa.me/573124894828" target="_blank" rel="noopener">WhatsApp: +57 312 489 4828</a></li>
+                        <li><a href="https://wa.me/nescool101" target="_blank" rel="noopener">WhatsApp @nescool101</a></li>
                     </ul>
                 </div>
             </div>
@@ -500,8 +454,13 @@
     </footer>
 
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/573124894828?text=Hola%2C%20me%20interesa%20ArriendoTrack" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contact via WhatsApp">
+    <a href="https://wa.me/nescool101?text=Hola%2C%20me%20interesa%20ArriendoTrack" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contact via WhatsApp">
         <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <!-- Floating Telegram Button -->
+    <a href="https://t.me/nescool101" class="whatsapp-float telegram-float" target="_blank" rel="noopener" aria-label="Contact via Telegram">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M9.78 15.67l-.4 4.2c.57 0 .82-.25 1.12-.54l2.69-2.57 5.57 4.08c1.02.57 1.74.27 2-.94l3.62-16.9c.33-1.5-.54-2.08-1.53-1.72L1.5 10.5c-1.46.57-1.44 1.38-.25 1.75l5.45 1.7L19.4 6.02c.6-.4 1.15-.18.7.22z"/></svg>
     </a>
 
     <script src="js/main.js"></script>
